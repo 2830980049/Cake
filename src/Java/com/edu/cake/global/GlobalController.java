@@ -47,6 +47,7 @@ public class GlobalController extends GenericServlet {
         }
 
         try {
+            System.out.println(className+" "+methodName);
             Class cla = Class.forName(className);
             Object object = cla.newInstance();
             Method method = cla.getMethod(methodName,HttpServletRequest.class, HttpServletResponse.class);
