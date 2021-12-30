@@ -4,6 +4,9 @@ import com.edu.cake.entity.Cake;
 
 import java.util.List;
 
+/**
+*  DEV
+*/
 public interface CakeBiz {
     void add(Cake cake);
     void edit(Cake cake);
